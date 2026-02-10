@@ -55,8 +55,8 @@ export default function CurrentProjectPage() {
             they have been to. They can follow other users and compare trips and countries visited.
           </p>
           <motion.button
-            className="mb-6 border-lg bg-[#45A29E] px-4 md:px-6 py-2 md:py-3 rounded-md text-white font-bold tracking-wider text-lg md:text-xl block md:block hidden"
-            whileHover={{ scale: 1.05 }}
+            className="mb-6 border-lg bg-gradient-to-br from-[#45A29E] to-[#3a8984] px-4 md:px-6 py-2 md:py-3 rounded-md text-white font-bold tracking-wider text-lg md:text-xl block md:block hidden border border-[#45A29E]/30 shadow-lg hover:shadow-[#45A29E]/50 hover:border-[#66FCF1]/50 transition-all duration-300"
+            whileHover={{ scale: 1.05, translateY: -2 }}
             transition={{ duration: 0.25 }}
           >
             <span>COMING SOON</span>
@@ -67,11 +67,13 @@ export default function CurrentProjectPage() {
       <motion.div
         className="w-full md:w-[45vw] flex items-center justify-center h-auto md:h-[70vh]"
         style={{ y: !isMobile ? imgTransform : 0 }}
+        whileHover={{ scale: 1.02 }}
+        transition={{ duration: 0.3 }}
       >
         <img
           src="vjrLogin.png"
           alt="VJR Dashboard for user @emilio"
-          className="max-w-full h-auto rounded-lg shadow-lg"
+          className="max-w-full h-auto rounded-lg border border-[#45A29E]/30 shadow-lg hover:shadow-[#45A29E]/20 hover:border-[#66FCF1]/50 transition-all duration-300"
         />
       </motion.div>
     </div>

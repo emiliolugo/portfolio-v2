@@ -17,9 +17,15 @@ export default function HeroPage(){
 
     return(
         <div className="relative w-full h-screen  justify-center bg-gradient-to-b from-[#2C3845] to-[#151C22] p-10">
-            <div className="mt-10 mx-20 hidden md:block">
-                <h4 className="text-[#66FCF1] mr-auto font-mono text-2xl hover:text-[#45A29E]">Emilio Lugo<span className="text-white font-sans text-4xl">.</span></h4>
-            </div>
+            <motion.div
+                className="mt-10 mx-20 hidden md:block"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+            >
+                <h4 className="text-[#66FCF1] mr-auto font-mono text-2xl hover:text-[#45A29E] transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(102,252,241,0.5)]">
+                    Emilio Lugo<span className="text-white font-sans text-4xl">.</span>
+                </h4>
+            </motion.div>
            <div 
         ref={ref}
         className="relative w-full h-full flex overflow-hidden items-center justify-center">

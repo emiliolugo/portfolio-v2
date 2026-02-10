@@ -7,7 +7,6 @@ import CurrentProjectPage from './assets/components/CurrProject';
 import ProjectsPage from './assets/components/Projects';
 import ContactPage from './assets/components/Contact';
 import ExperiencePage from './assets/components/Experience';
-import SkillsPage from './assets/components/Skills';
 import LoaderPage from './assets/components/Loader';
 
 export default function App() {
@@ -50,13 +49,13 @@ export default function App() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: .5, duration: 1 }}
-        
+
       >
           <HeroPage />
-          <SkillsPage />
+          <ExperiencePage />
+
           <CurrentProjectPage />
           <ProjectsPage />
-          <ExperiencePage />
           <ContactPage />
         </motion.div>
       )}

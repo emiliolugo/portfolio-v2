@@ -88,16 +88,18 @@ export default function SkillsPage() {
 
 const SkillCardPage = ({skills, isMobile}) => {
     return(
-        <motion.div 
-                className="md:w-[25vw] gap-y-10 w-full"
+        <motion.div
+                className="md:w-[25vw] gap-y-10 w-full border border-[#45A29E]/30 rounded-lg shadow-lg hover:shadow-[#45A29E]/20 hover:border-[#66FCF1]/50 transition-all duration-300 overflow-hidden"
                 style={{ y: isMobile ? 0 : skills.transform }}
-            >   
-            <div className="flex gap-x-2 items-center w-full md:rounded-t-lg bg-[#45A29E] md:p-8 p-3">
+                whileHover={{ scale: 1.02, translateY: -5 }}
+                transition={{ duration: 0.3 }}
+            >
+            <div className="flex gap-x-2 items-center w-full md:rounded-t-lg bg-gradient-to-br from-[#45A29E] to-[#3a8984] md:p-8 p-3">
                 <skills.icon className ='text-white'/>
                 <h2 className="text-white font-bold md:text-3xl">{skills.name}</h2>
             </div>
-                
-                <div className="bg-stone-100/5 p-10 md:h-[20vh] h-[30vh] rounded-b-lg hidden md:block">
+
+                <div className="bg-gradient-to-br from-[#1F2833] to-[#151C22] p-10 md:h-[20vh] h-[30vh] rounded-b-lg hidden md:block">
                     <p className="text-[#C5C6C7] w-full  md:mt-auto">
                         {skills.text}
                     </p>

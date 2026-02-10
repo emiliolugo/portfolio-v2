@@ -3,10 +3,10 @@ import ProjectCard from './ProjectCard'
 
 export default function ProjectsPage() {
     const bigProj = {
-        name: "MoviesWrapped",
-        desc: "Discover your favorite viewing statistics!",
-        href: "https://imdb-wrapped.vercel.app",
-        img: "/movieswrapped.png"
+        name: "StudyWithChat",
+        desc: "Custom AI Chatbot Integrated with any textbook PDF",
+        href: "https://github.com/emiliolugo",
+        img: "/studywchat.png"
     }
     
     const bottomProj = [
@@ -19,17 +19,17 @@ export default function ProjectsPage() {
         {
             name: "SkywalkerStacks",
             desc: "Track your star wars legos!",
-            href: "https://mentalwhiz.vercel.app",
+            href: "https://skywalker-stacks.onrender.com/",
             img: "/skywalkerstacks.png"
         }
     ]
     
     const projects = [
         {
-            name: "INgineering @ IU",
-            desc: "Website for IUB's engineering club!",
-            href: "https://ingineering-at-iu.github.io/website/",
-            img: "/ingineering.png"
+        name: "MoviesWrapped",
+        desc: "Discover your favorite viewing statistics!",
+        href: "https://imdb-wrapped.vercel.app",
+        img: "/movieswrapped.png"
         },
         {
             name: "Squee-G's Windows",
